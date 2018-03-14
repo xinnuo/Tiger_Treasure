@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/dimen_size_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_size_10"
+        android:paddingRight="@dimen/dimen_size_10">
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_space"
+            android:text="企业名称" />
+
+        <EditText
+            android:id="@+id/enterprise_name"
+            style="@style/Font14_black_dark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入企业全称或企业代码"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bt_done"
+            style="@style/Font15_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_margin="@dimen/dimen_size_20"
+            android:background="@drawable/rec_bg_blue"
+            android:onClick="doClick"
+            android:text="下一步" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_register_xy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="center_vertical|end"
+        android:paddingBottom="20dp"
+        android:paddingRight="@dimen/dimen_size_20"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/Font13_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册即代表同意" />
+
+        <TextView
+            android:id="@+id/register_deal"
+            style="@style/Font13_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="doClick"
+            android:paddingBottom="@dimen/margin_space"
+            android:paddingTop="@dimen/margin_space"
+            android:text="《服务协议》"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout>

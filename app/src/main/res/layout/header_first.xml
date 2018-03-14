@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/first_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:rollviewpager_hint_gravity="center"
+        app:rollviewpager_play_delay="3000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_space"
+        android:paddingTop="@dimen/margin_space">
+
+        <LinearLayout
+            android:id="@+id/first_qi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_nav_user" />
+
+            <TextView
+                style="@style/Font12_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="企业家" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first_vip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_nav_member" />
+
+            <TextView
+                style="@style/Font12_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="VIP会员" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first_huo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_nav_goods" />
+
+            <TextView
+                style="@style/Font12_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="供货采购" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first_quan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_nav_mon" />
+
+            <TextView
+                style="@style/Font12_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="金融圈" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_space"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@drawable/rec_bg_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_ad" />
+
+        <com.ruanmeng.view.SwitcherTextView
+            android:id="@+id/first_notice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="@dimen/dimen_size_15"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:background="@color/black_dark" />
+
+        <TextView
+            android:id="@+id/first_more"
+            style="@style/Font14_black_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:padding="@dimen/margin_space"
+            android:text="更多" />
+
+    </LinearLayout>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/first_around"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_46"
+        android:layout_marginTop="@dimen/margin_space"
+        app:sBottomLineMargin="10dp"
+        app:sLeftTextColor="@color/black_dark"
+        app:sLeftTextMarginLeft="@dimen/margin_space"
+        app:sLeftTextString="附近企业"
+        app:sLineShow="both"
+        app:sRightIconMarginRight="@dimen/margin_space"
+        app:sRightIconRes="@mipmap/icon_right_black"
+        app:sRightIconSize="13dp"
+        app:sRightTextSize="13sp"
+        app:sRightTextString="更多"
+        app:sRightTextColor="@color/black_dark"
+        app:sRightTextMarginRight="25dp"
+        app:sTopLineMargin="0dp" />
+
+</LinearLayout>

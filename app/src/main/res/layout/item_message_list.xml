@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_space">
+
+        <RelativeLayout
+            android:layout_width="54dp"
+            android:layout_height="54dp">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/item_message_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/not_1"
+                app:riv_corner_radius="5dp" />
+            <TextView
+                android:id="@+id/item_message_count"
+                style="@style/Font12_light"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:background="@drawable/yuan"
+                android:gravity="center"
+                android:minWidth="18dp"
+                android:paddingLeft="@dimen/dimen_size_5"
+                android:paddingRight="@dimen/dimen_size_5" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_size_3"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:layout_marginTop="@dimen/dimen_size_3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_message_title"
+                    style="@style/Font14_black_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="名称" />
+
+                <TextView
+                    android:id="@+id/item_message_time"
+                    style="@style/Font13_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1天前" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_message_content"
+                    style="@style/Font13_light"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="描述" />
+
+                <!-- <TextView
+                     android:id="@+id/item_message_count"
+                     style="@style/Font12_light"
+                     android:layout_width="8dp"
+                     android:layout_height="8dp"
+                     android:background="@drawable/yuan"
+                     android:gravity="center"
+                     android:minWidth="18dp"
+                     android:paddingLeft="@dimen/dimen_size_5"
+                     android:paddingRight="@dimen/dimen_size_5"
+                     />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_message_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@color/divider" />
+
+    <View
+        android:id="@+id/item_message_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider"
+        android:visibility="gone" />
+
+</LinearLayout>

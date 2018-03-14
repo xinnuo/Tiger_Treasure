@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pay_name"
+            style="@style/Font14_black_dark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_size_45"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_size_10"
+            android:text="VIP会员" />
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@id/recycle_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_size_45"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/Font14_black_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_size_10"
+                android:text="需支付" />
+
+            <TextView
+                android:id="@+id/pay_total"
+                style="@style/Font14_black_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textColor="@color/orange" />
+
+            <TextView
+                style="@style/Font14_black_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="元" />
+
+            <TextView
+                android:textSize="12.0sp"
+                android:textColor="@color/light"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_hintprice"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginTop="10dp"
+            android:background="#FFEEEEEE"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_space"
+            android:paddingRight="@dimen/margin_space">
+
+            <TextView
+                style="@style/Font14_black_dark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="是否开具发票" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/pay_switch"
+                android:layout_width="55dp"
+                android:layout_height="32dp"
+                app:sb_checked="false"
+                app:sb_checked_color="@color/colorAccent"
+                app:sb_shadow_effect="true"
+                app:sb_show_indicator="false" />
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/divider_height"-->
+        <!--android:background="@color/divider" />-->
+
+        <com.github.aakira.expandablelayout.ExpandableLinearLayout
+            android:id="@+id/expand_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:ael_duration="300"
+            app:ael_expanded="false">
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/pay_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_size_45.5"
+                app:sBottomLineMargin="0dp"
+                app:sLeftTextColor="@color/black_dark"
+                app:sLeftTextMarginLeft="@dimen/margin_space"
+                app:sLeftTextString="发票"
+                app:sLineShow="bottom"
+                app:sRightIconMarginRight="@dimen/margin_space"
+                app:sRightIconRes="@mipmap/icon_right"
+                app:sRightIconSize="13dp"
+                app:sRightTextColor="@color/light"
+                app:sRightTextMarginRight="30dp"
+                app:sRightTextString="请选择发票" />
+
+        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_size_45"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="请选择支付方式"
+            android:textColor="@color/gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider" />
+
+        <RadioGroup
+            android:id="@+id/pay_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RadioButton
+                android:id="@+id/pay_wx"
+                style="@style/Font14_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_wx"
+                android:drawablePadding="@dimen/dimen_size_10"
+                android:drawableRight="@drawable/cb_pay_selector"
+                android:padding="@dimen/margin_space"
+                android:text="微信支付" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_marginLeft="@dimen/margin_space"
+                android:layout_marginRight="@dimen/margin_space"
+                android:background="@color/divider" />
+
+            <RadioButton
+                android:id="@+id/pay_zfb"
+                style="@style/Font14_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@mipmap/icon_zfb"
+                android:drawablePadding="@dimen/dimen_size_10"
+                android:drawableRight="@drawable/cb_pay_selector"
+                android:padding="@dimen/margin_space"
+                android:text="支付宝支付" />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_size_15"
+            android:layout_marginTop="@dimen/margin_space"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/Font13_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_size_10"
+                android:text="成为会员即表示同意" />
+
+            <TextView
+                android:id="@+id/pay_deal"
+                style="@style/Font13_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="doClick"
+                android:text="《虎宝会员协议》"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pay_sure"
+            style="@style/Font15_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_size_40"
+            android:layout_marginBottom="@dimen/dimen_size_20"
+            android:layout_marginLeft="@dimen/dimen_size_20"
+            android:layout_marginRight="@dimen/dimen_size_20"
+            android:layout_marginTop="@dimen/dimen_size_10"
+            android:background="@drawable/rec_bg_blue"
+            android:onClick="doClick"
+            android:text="立即支付" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

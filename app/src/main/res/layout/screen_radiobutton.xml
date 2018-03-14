@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Font13_black"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_size_40"
+    android:background="@drawable/screen_rb_bg"
+    android:button="@null"
+    android:drawablePadding="@dimen/dimen_size_3"
+    android:drawableRight="@drawable/rb_company_selector"
+    android:layout_marginLeft="@dimen/dimen_size_20"
+    android:layout_marginRight="@dimen/dimen_size_20"
+    android:text="定时达" />

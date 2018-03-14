@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@id/iv_nav_back"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:padding="6.5dp"
+        android:src="@mipmap/nav_pre" />
+
+    <LinearLayout
+        android:id="@+id/search_nav_hint"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_size_5"
+        android:layout_marginRight="@dimen/dimen_size_5"
+        android:layout_weight="1"
+        android:background="@drawable/rec_bg_divider"
+        android:gravity="center_vertical|left"
+        android:onClick="doClick">
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_marginRight="@dimen/dimen_size_5"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_search_2"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/Font14_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入关键字" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_nav_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:clickable="true"
+        android:drawableTop="@mipmap/icon_nav_info"
+        android:onClick="doClick"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space"
+        android:text="发布信息"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>

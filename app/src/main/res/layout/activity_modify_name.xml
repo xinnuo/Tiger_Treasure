@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/Font14_black_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/margin_space"
+        android:background="@android:color/transparent"
+        android:hint="请输入姓名"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/margin_space" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        style="@style/Font12_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_space"
+        android:text="真实姓名更容易被朋友找到" />
+
+</LinearLayout>

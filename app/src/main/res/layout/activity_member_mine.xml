@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/img_19"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@id/iv_nav_back"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:onClick="doClick"
+        android:padding="6.5dp"
+        android:src="@mipmap/nav_pre_white"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/line_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/member_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/not_1"
+                    app:riv_oval="true" />
+
+                <ImageView
+                    android:id="@+id/member_vip"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone"
+                    android:layout_gravity="end|bottom" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/member_hint"
+                    style="@style/Font14_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_space"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/member_tim"
+                    style="@style/Font12_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_space"
+                    android:text="" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.crazysunj.cardslideview.CardViewPager
+            android:id="@+id/member_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/dimen_size_10"
+            android:layout_marginTop="@dimen/dimen_size_40"
+            android:layout_weight="1"
+            app:card_loop="true" />
+
+        <TextView
+            android:id="@+id/member_help"
+            style="@style/Font13_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_size_20"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:drawableLeft="@mipmap/icon_question"
+            android:drawablePadding="@dimen/dimen_size_5"
+            android:gravity="center"
+            android:text="会员帮助中心" />
+
+    </LinearLayout>
+
+</FrameLayout>

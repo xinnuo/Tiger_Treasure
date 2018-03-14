@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:background="@drawable/rec_bg_ova_white_stroke_ligher_radius_30"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:text="类型"
+    style="@style/Font13_black_dark"/>

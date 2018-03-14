@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll">
+
+            <com.ruanmeng.view.ClearEditText
+                android:id="@+id/et_contctkeyword"
+                style="@style/Font14_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_size_30"
+                android:layout_margin="@dimen/dimen_size_8"
+                android:background="@drawable/rec_bg_ova_white_stroke_ligher"
+                android:drawableLeft="@mipmap/icon_search_2"
+                android:drawablePadding="@dimen/dimen_size_5"
+                android:hint="请输入关键字"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dimen_size_5"
+                android:paddingRight="@dimen/dimen_size_5"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_zfh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="doClick"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dimen_size_8">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/item_head_zf_img"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/icon_government"
+                    app:riv_corner_radius="3dp" />
+
+
+                <TextView
+                    android:id="@+id/item_head_zf_name"
+                    style="@style/Font14_black_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_space"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="政府号" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </FrameLayout>
+
+
+    <com.ruanmeng.sort.IndexLayout
+        android:id="@+id/index_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+</android.support.design.widget.CoordinatorLayout>

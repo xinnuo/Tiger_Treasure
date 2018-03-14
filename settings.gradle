@@ -1,0 +1,1 @@
+include ':app', ':okgo-lib', ':MNProgressHUD', ':RollViewPager', ':SuperText', ':badgeviewlib', ':cardslideview', ':AMap', ':RongCloudIMkit', ':MNImageBrowser', ':UmengSocial'

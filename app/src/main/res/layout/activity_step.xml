@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left" />
+
+    <LinearLayout
+        android:id="@+id/step_zu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:onClick="doClick"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="75dp"
+            android:text="我的足迹" />
+
+        <ImageView
+            android:id="@+id/step_zu_iv"
+            android:layout_width="@dimen/dimen_size_25"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/step_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/black_dark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/step_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:ael_duration="300"
+        app:ael_expanded="false"
+        app:ael_interpolator="linearOutSlowIn"
+        app:ael_orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/step_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/step_check1"
+                style="@style/Font13_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_size_40"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/rb_step_selector_color" />
+
+            <RadioButton
+                android:id="@+id/step_check2"
+                style="@style/Font13_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_size_40"
+                android:button="@null"
+                android:gravity="center"
+                android:text="看过的企业家"
+                android:textColor="@color/rb_step_selector_color" />
+
+            <RadioButton
+                android:id="@+id/step_check3"
+                style="@style/Font13_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_size_40"
+                android:button="@null"
+                android:gravity="center"
+                android:text="看过的企业"
+                android:textColor="@color/rb_step_selector_color" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider"
+            android:visibility="gone" />
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/margin_space"
+        android:background="@color/divider"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_list" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_space">
+
+        <ImageView
+            android:id="@+id/item_search_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/default_product2" />
+
+        <TextView
+            android:id="@+id/item_search_name"
+            style="@style/Font14_black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:layout_weight="1"
+            android:text="名称" />
+
+        <ImageView
+            android:id="@+id/item_search_del"
+            android:layout_width="@dimen/dimen_size_40"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/margin_space"
+            android:paddingRight="@dimen/margin_space"
+            android:src="@mipmap/icon_del" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_search_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@color/divider" />
+
+    <View
+        android:id="@+id/item_search_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/member_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:rollviewpager_hint_gravity="center"
+        app:rollviewpager_play_delay="3000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/member_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/black_dark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_space"
+        android:background="@color/background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/member_qu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:onClick="doClick"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/member_qu_tv"
+                style="@style/Font13_black_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+
+                android:maxWidth="75dp"
+                android:text="不限区域" />
+
+            <ImageView
+                android:id="@+id/member_qu_iv"
+                android:layout_width="@dimen/dimen_size_25"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/member_job"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/member_job_tv"
+                style="@style/Font13_black_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:maxWidth="75dp"
+                android:text="不限行业" />
+
+            <ImageView
+                android:id="@+id/member_job_iv"
+                android:layout_width="@dimen/dimen_size_25"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/member_xuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/member_xuan_tv"
+                style="@style/Font13_black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:maxWidth="75dp"
+                android:text="筛选" />
+
+            <ImageView
+                android:id="@+id/member_xuan_iv"
+                android:layout_width="@dimen/dimen_size_25"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/member_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+
+</LinearLayout>

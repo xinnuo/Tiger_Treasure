@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:layout_marginTop="@dimen/margin_space"
+        android:gravity="center_vertical">
+
+        <com.ruanmeng.view.RoundAngleImageView
+            android:id="@+id/item_first_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_logo" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_first_company"
+                style="@style/Font14_black_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_size_10"
+                android:drawablePadding="@dimen/dimen_size_5"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/item_first_type"
+            style="@style/Font12_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:background="@drawable/rec_bg_ova_white_stroke_orange"
+            android:paddingLeft="@dimen/dimen_size_8"
+            android:paddingRight="@dimen/dimen_size_8"
+            android:text="在营"
+            android:textColor="@color/orange"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_first_length"
+            style="@style/Font13_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0m" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_first_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_space">
+
+        <com.ruanmeng.view.RoundAngleImageView
+            android:id="@+id/item_first_img"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/default_product" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_first_title"
+                style="@style/Font13_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="企业性质" />
+
+            <TextView
+                android:id="@+id/item_first_addr"
+                style="@style/Font13_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_size_8"
+                android:drawableLeft="@mipmap/icon_address"
+                android:drawablePadding="@dimen/dimen_size_3"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="地址" />
+
+            <View
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_first_scan"
+                    style="@style/Font13_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_view"
+                    android:drawablePadding="@dimen/dimen_size_3"
+                    android:text="浏览 0" />
+
+                <TextView
+                    android:id="@+id/item_first_watch"
+                    style="@style/Font13_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/collect"
+                    android:drawablePadding="@dimen/dimen_size_3"
+                    android:text="关注 0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_first_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@color/divider" />
+
+    <View
+        android:id="@+id/item_first_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/item_first_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_10"
+        android:background="@color/background"
+        android:visibility="gone" />
+
+</LinearLayout>

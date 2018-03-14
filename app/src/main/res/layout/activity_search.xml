@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height"
+            android:layout_margin="@dimen/margin_space"
+            android:layout_weight="1"
+            android:background="@drawable/rec_bg_ova_white_stroke_ligher"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_space"
+            android:paddingRight="@dimen/margin_space">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/icon_search_2"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/et_keyword"
+                style="@style/Font14_black_dark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_size_5"
+                android:background="@android:color/transparent"
+                android:hint="请输入关键字"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_cancel"
+            style="@style/Font15_black"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/btn_height"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:paddingRight="@dimen/margin_space"
+            android:text="搜索"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/li_search_botton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/search_product"
+                style="@style/Font12_black"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rec_bg_ova_white_stroke_ligher"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="搜产品" />
+
+            <TextView
+                android:id="@+id/search_company"
+                style="@style/Font12_black"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rec_bg_ova_white_stroke_ligher"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="搜企业" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_space">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv_search_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/search_hint"
+                    style="@style/Font14_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_space"
+                    android:text="搜索历史" />
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/search_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_space"
+                    app:max_select="1" />
+
+                <com.ruanmeng.view.DrawableCenterTextView
+                    android:id="@+id/search_clear"
+                    style="@style/Font13_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height"
+                    android:drawableLeft="@mipmap/icon_clear"
+                    android:drawablePadding="@dimen/dimen_size_5"
+                    android:gravity="center_vertical"
+                    android:text="清空历史搜索" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/layout_no_search_result" />
+
+    </FrameLayout>
+
+</LinearLayout>

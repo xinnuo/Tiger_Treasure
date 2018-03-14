@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.ruanmeng.view.RoundAngleImageView
+                android:id="@+id/item_second_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_space"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/not_1"
+                app:riv_border_color="@color/white"
+                app:riv_border_width="@dimen/divider_height" />
+
+            <ImageView
+                android:id="@+id/item_second_circle"
+                android:layout_width="@dimen/dimen_size_10"
+                android:layout_height="@dimen/dimen_size_10"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/dimen_size_8"
+                android:src="@drawable/ova_red"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/item_second_count"
+                style="@style/Font12_white"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/dimen_size_5"
+                android:background="@drawable/rec_bg_red_size15"
+                android:gravity="center"
+                android:minWidth="15dp"
+                android:paddingLeft="@dimen/dimen_size_5"
+                android:paddingRight="@dimen/dimen_size_5"
+                android:text="0"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_size_13"
+            android:layout_marginTop="@dimen/dimen_size_13"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_second_name"
+                    style="@style/Font14_black_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="名称" />
+
+                <TextView
+                    android:id="@+id/item_second_time"
+                    style="@style/Font13_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_size_10"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="19:42" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/item_second_hint"
+                style="@style/Font13_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="内容" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_second_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/margin_space"
+        android:layout_marginRight="@dimen/margin_space"
+        android:background="@color/divider" />
+
+    <View
+        android:id="@+id/item_second_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider"
+        android:visibility="gone" />
+
+</LinearLayout>

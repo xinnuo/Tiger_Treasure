@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginRight="@dimen/dimen_size_5"
+    android:layout_marginBottom="@dimen/dimen_size_5">
+
+    <TextView
+        android:id="@+id/item_tab_name"
+        style="@style/Font13_black_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_30"
+        android:layout_marginRight="@dimen/margin_space"
+        android:layout_marginTop="@dimen/margin_space"
+        android:background="@drawable/rec_bg_ova_white_stroke_ligher"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="名称" />
+
+    <ImageView
+        android:id="@+id/item_tab_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@mipmap/icon_delitem" />
+
+</FrameLayout>

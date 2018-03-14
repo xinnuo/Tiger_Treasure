@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_left" />
+
+    <EditText
+        android:id="@+id/et_content"
+        style="@style/Font13_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_size_15"
+        android:layout_marginRight="@dimen/dimen_size_15"
+        android:layout_marginTop="@dimen/margin_space"
+        android:background="@drawable/rec_bg_background_stroke_divider"
+        android:gravity="top"
+        android:hint="在此写下您的回复内容..."
+        android:maxLength="150"
+        android:minLines="8"
+        android:padding="@dimen/margin_space" />
+
+    <Button
+        android:id="@+id/bt_confirm"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_margin="@dimen/dimen_size_20"
+        android:background="@drawable/rec_bg_blue"
+        android:onClick="doClick"
+        android:text="确认回复" />
+
+</LinearLayout>

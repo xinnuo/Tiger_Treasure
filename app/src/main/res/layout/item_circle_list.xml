@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_circle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_size_15"
+    android:paddingRight="@dimen/dimen_size_15">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_circle_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_space"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius="@dimen/dimen_size_3"
+        android:src="@mipmap/not_2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_space">
+
+        <TextView
+            android:id="@+id/item_circle_title"
+            style="@style/Font14_black_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="标题" />
+
+        <TextView
+            android:id="@+id/item_circle_content"
+            style="@style/Font13_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_size_5"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/dimen_size_3"
+            android:maxLines="2"
+            android:text="内容"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_size_10"
+            android:gravity="center_vertical">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/item_circle_logo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:riv_corner_radius="@dimen/dimen_size_3"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/not_1" />
+
+            <TextView
+                android:id="@+id/item_circle_company"
+                style="@style/Font13_gray"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_size_5"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="公司名称" />
+
+            <TextView
+                android:id="@+id/item_circle_scan"
+                style="@style/Font13_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_view"
+                android:drawablePadding="@dimen/dimen_size_5"
+                android:gravity="center_vertical"
+                android:text="0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_circle_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_space"
+        android:visibility="gone" />
+
+</LinearLayout>

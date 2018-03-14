@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_vip_hui"
+        style="@style/Font14_black_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_size_30"
+        android:drawablePadding="@dimen/dimen_size_5"
+        android:gravity="center"
+        android:text="会员特权" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider" />
+<LinearLayout
+    android:id="@+id/li_vip_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    ></LinearLayout>
+    <TextView
+        android:id="@+id/item_vip_range"
+        style="@style/Font14_black_dark"
+        android:layout_width="220dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_size_20"
+        android:layout_marginTop="@dimen/dimen_size_30"
+        android:drawableLeft="@mipmap/icon_find"
+        android:drawablePadding="@dimen/dimen_size_5"
+        android:text="可查看企业范围：所属镇/街道" />
+
+    <TextView
+        android:id="@+id/item_vip_people"
+        style="@style/Font14_black_dark"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_size_20"
+        android:layout_marginTop="@dimen/dimen_size_20"
+        android:visibility="gone"
+        android:drawableLeft="@mipmap/icon_find"
+        android:drawablePadding="@dimen/dimen_size_5"
+        android:text="查看浏览过我的人：30个" />
+
+    <TextView
+        android:id="@+id/item_vip_count"
+        style="@style/Font14_black_dark"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_size_20"
+        android:layout_marginTop="@dimen/dimen_size_20"
+        android:visibility="gone"
+        android:drawableLeft="@mipmap/icon_find"
+        android:drawablePadding="@dimen/dimen_size_5"
+        android:text="可上传产品数量：8个" />
+
+    <TextView
+        android:id="@+id/item_vip_num"
+        style="@style/Font14_black_dark"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_size_10"
+        android:layout_marginLeft="@dimen/dimen_size_20"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_size_20"
+        android:drawableLeft="@mipmap/icon_find"
+        android:drawablePadding="@dimen/dimen_size_5"
+        android:text="发布供货采购合作：5条" />
+
+    <Button
+        android:id="@+id/item_vip_open"
+        style="@style/Font15_white"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_size_30"
+        android:background="@mipmap/icon_vip_bt"
+        android:onClick="doClick"
+        android:text="开通会员" />
+
+</LinearLayout>

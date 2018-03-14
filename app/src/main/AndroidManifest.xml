@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ruanmeng.tiger_treasure">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.ruanmeng.base.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/logonew"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 友盟+ start -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a4da216a40fa349850001eb" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="" />
+        <!-- 友盟+ end -->
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AreaListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterpriseHintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterpriseInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".EnterpriseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterpriseBecomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterpriseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterpriseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CityListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterpriseBeforeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IssueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IssueFirstActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".IssueSecondActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".IssueThirdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".CircleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CircleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModifyNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModifyAgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModifyDutyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ModifyAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ModifyPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WatchingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompanyModifyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ProductMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WatchInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WatchMemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BusinessReplyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemberMineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GGWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MomentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AreaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProvinceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConversationGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConversationOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReleaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".PersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GovtContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReleaseMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GovernmentModifyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 融云即时通讯 start -->
+        <!-- 会话列表 -->
+        <activity
+            android:name="com.ruanmeng.fragment.TabFirstFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BusinessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- 会话界面 -->
+        <activity
+            android:name=".ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 必须实现，否则会收不到推送消息，自定义的类继承自 PushMessageReceiver -->
+        <receiver
+            android:name="com.ruanmeng.receiver.RongPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Android 7.0 应用间共享文件 -->
+        <provider
+            android:name="io.rong.imkit.RongCloudFileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+        <!-- 融云即时通讯 end -->
+
+
+        <!-- 微信分享 start -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信分享 end -->
+
+
+        <!-- 微信支付 start -->
+        <meta-data
+            android:name="WX_APPID"
+            android:value="wxdad4d615ac039224" />
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 微信支付 end -->
+
+
+        <!-- 支付宝 start -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 支付宝 end -->
+        <!-- Android 7.0  PictureSelector应用间共享文件 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".TicketActivity" />
+        <activity android:name=".InterestingActivity" />
+        <activity android:name=".FeedBackActivity" />
+        <activity android:name=".AddManagerActivity" />
+        <activity android:name=".ChangePswActivity" />
+        <activity android:name=".ChangeGroupNameActivity" />
+        <activity android:name=".ProductEditActivity" />
+        <activity android:name=".VipActivity" />
+        <activity android:name=".GetYZMActivity" />
+        <activity android:name=".ForgetPswActivity" />
+        <activity android:name=".ContactDelActivity"></activity>
+    </application>
+
+</manifest>

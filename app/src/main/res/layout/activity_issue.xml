@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Font14_black_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_size_40"
+        android:layout_marginRight="@dimen/margin_space"
+        android:layout_marginTop="@dimen/dimen_size_40"
+        android:text="请选择发布信息类型" />
+
+    <Button
+        android:id="@+id/bt_gong"
+        style="@style/Font14_white"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/rec_bg_blue"
+        android:onClick="doClick"
+        android:text="发布供货信息" />
+
+    <Button
+        android:id="@+id/bt_buy"
+        style="@style/Font14_white"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="@dimen/dimen_size_15"
+        android:background="@drawable/rec_bg_ova_white_stroke_blue"
+        android:onClick="doClick"
+        android:text="发布采购信息"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/bt_he"
+        style="@style/Font14_black_dark"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="@dimen/dimen_size_15"
+        android:background="@drawable/rec_bg_ova_white_stroke_gray"
+        android:onClick="doClick"
+        android:text="发布合作信息" />
+
+</LinearLayout>

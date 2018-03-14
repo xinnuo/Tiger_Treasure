@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_45"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_size_10"
+        android:paddingRight="@dimen/dimen_size_10">
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告标题" />
+
+        <EditText
+            android:id="@+id/gg_edit_title"
+            style="@style/Font14_black_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_size_10"
+            android:background="@color/transparent"
+            android:hint="请输入公告标题" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_size_10">
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告内容" />
+
+        <EditText
+            android:id="@+id/gg_edit_content"
+            style="@style/Font14_black_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_size_10"
+            android:background="@drawable/edit_gg_content"
+            android:gravity="top"
+            android:hint="请输入公告内容"
+            android:maxLines="4"
+            android:minLines="4"
+            android:padding="@dimen/dimen_size_10" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_stop_date"
+        android:onClick="doClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_size_45"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_size_10"
+        android:paddingRight="@dimen/dimen_size_10">
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截止时间" />
+
+        <TextView
+            android:id="@+id/text_gg_date"
+            style="@style/Font14_black_dark"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dimen_size_10"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_size_13"
+            android:layout_height="@dimen/dimen_size_13"
+            android:src="@mipmap/icon_right" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_size_10">
+
+        <TextView
+            style="@style/Font14_black_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_size_10"
+            android:text="添加图片" />
+
+        <ImageView
+            android:id="@+id/img_gg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="doClick"
+            android:src="@mipmap/uploade" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_done"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_margin="@dimen/dimen_size_20"
+        android:background="@drawable/rec_bg_blue"
+        android:onClick="doClick"
+        android:text="发布公告" />
+
+</LinearLayout>

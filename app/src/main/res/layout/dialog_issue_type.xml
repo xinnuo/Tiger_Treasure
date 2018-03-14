@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Font15_light"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/background"
+        android:gravity="center" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_issue_gong"-->
+    <!--style="@style/Font14_black_dark"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/line_height"-->
+    <!--android:gravity="center"-->
+    <!--android:text="发布供货信息" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/divider_height"-->
+    <!--android:layout_marginLeft="@dimen/margin_space"-->
+    <!--android:layout_marginRight="@dimen/margin_space"-->
+    <!--android:background="@color/divider" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_issue_buy"-->
+    <!--style="@style/Font14_black_dark"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/line_height"-->
+    <!--android:gravity="center"-->
+    <!--android:text="发布采购信息" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/divider_height"-->
+    <!--android:layout_marginLeft="@dimen/margin_space"-->
+    <!--android:layout_marginRight="@dimen/margin_space"-->
+    <!--android:background="@color/divider" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_issue_coo"-->
+    <!--style="@style/Font14_black_dark"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/line_height"-->
+    <!--android:gravity="center"-->
+    <!--android:text="发布合作信息" />-->
+
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background" />
+
+
+    <TextView
+        android:id="@+id/tv_issue_cancel"
+        style="@style/Font15_black"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消" />
+</LinearLayout>

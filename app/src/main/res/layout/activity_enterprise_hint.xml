@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ruanmeng.tiger_treasure.EnterpriseHintActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/nopass" />
+
+    <TextView
+        android:id="@+id/enterprise_hint"
+        style="@style/Font14_black_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_size_5"
+        android:layout_marginLeft="@dimen/dimen_size_40"
+        android:layout_marginRight="@dimen/dimen_size_40"
+        android:layout_marginTop="@dimen/dimen_size_30"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dimen_size_3"
+        android:text="企业资料需要1-3天审核,如有任何疑问请咨询021-57710988"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_done"
+        style="@style/Font15_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_margin="@dimen/dimen_size_20"
+        android:background="@drawable/rec_bg_blue"
+        android:onClick="doClick"
+        android:text="确定" />
+
+</LinearLayout>

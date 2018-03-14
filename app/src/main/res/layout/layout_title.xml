@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@id/tv_nav_title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/tv_nav_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@id/iv_nav_right"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical|end"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:padding="13dp"
+        android:src="@mipmap/icon_share"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@id/iv_nav_back"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:padding="6.5dp"
+        android:src="@mipmap/nav_pre" />
+
+    <TextView
+        android:id="@id/tv_nav_lefttitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/btn_nav_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginBottom="@dimen/dimen_size_10"
+        android:layout_marginRight="@dimen/margin_space"
+        android:layout_marginTop="@dimen/dimen_size_10"
+        android:background="@drawable/rec_bg_blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="doClick"
+        android:paddingLeft="@dimen/margin_space"
+        android:paddingRight="@dimen/margin_space"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+</FrameLayout>
