@@ -46,9 +46,9 @@ class ContactActivity : BaseActivity() {
         getData()
     }
 
+    @Suppress("DEPRECATION")
     override fun init_title() {
         super.init_title()
-        @Suppress("DEPRECATION")
         val drawable = resources.getDrawable(R.mipmap.icon_nav_add)
         // 这一步必须要做,否则不会显示
         drawable.setBounds(0, 0, drawable.minimumWidth, drawable.minimumHeight)
@@ -60,11 +60,9 @@ class ContactActivity : BaseActivity() {
             val decoration = object : NormalDecoration() {
                 override fun getHeaderName(pos: Int): String = list[pos].letter
             }
-            @Suppress("DEPRECATION")
             decoration.setHeaderContentColor(resources.getColor(R.color.background))
             decoration.setHeaderHeight(DensityUtil.dp2px(30f))
             decoration.setTextSize(DensityUtil.sp2px(14f))
-            @Suppress("DEPRECATION")
             decoration.setTextColor(resources.getColor(R.color.gray))
             addItemDecoration(decoration)
         }
@@ -80,16 +78,21 @@ class ContactActivity : BaseActivity() {
                             .text(R.id.item_contact_cname, data.compName)
                             .text(R.id.item_contact_name, data.userName)
                             .with<TextView>(R.id.item_contact_cname) { view ->
-                                if (data.vipTypeId.equals("VIP_SLIVER")) {
-                                    val drawable = getResources().getDrawable(R.mipmap.vip_center)
-                                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight())
-                                    view.setCompoundDrawables(null, null, drawable, null)
-                                } else if (data.vipTypeId.equals("VIP_GOLD")) {
-                                    val drawable = getResources().getDrawable(R.mipmap.vip_most)
-                                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight())
-                                    view.setCompoundDrawables(null, null, drawable, null)
-                                } else
-                                    view.setCompoundDrawables(null, null, null, null)
+                                when {
+                                    data.vipTypeId == "VIP_SLIVER" -> {
+                                        @Suppress("NAME_SHADOWING")
+                                        val drawable = resources.getDrawable(R.mipmap.vip_center)
+                                        drawable.setBounds(0, 0, drawable.minimumWidth, drawable.minimumHeight)
+                                        view.setCompoundDrawables(null, null, drawable, null)
+                                    }
+                                    data.vipTypeId == "VIP_GOLD" -> {
+                                        @Suppress("NAME_SHADOWING")
+                                        val drawable = resources.getDrawable(R.mipmap.vip_most)
+                                        drawable.setBounds(0, 0, drawable.minimumWidth, drawable.minimumHeight)
+                                        view.setCompoundDrawables(null, null, drawable, null)
+                                    }
+                                    else -> view.setCompoundDrawables(null, null, null, null)
+                                }
                             }
                             .text(R.id.item_contact_distance, length)
                             .visibility(R.id.item_contact_distance, View.VISIBLE)
